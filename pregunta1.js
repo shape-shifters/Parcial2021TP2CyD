@@ -4,11 +4,23 @@
  */
 
 const even = function(numbers){
-    
+    even_arr = []
+    numbers.forEach((num) => {
+        if (num%2 == 0) {
+            even_arr.push(num)
+        }
+    });
+    return even_arr;
 }
 
 const odd = function(numbers){
-
+    odd_arr = []
+    numbers.forEach(function (num) {
+        if (num%2 != 0) {
+            odd_arr.push(num)
+        }
+    });
+    return odd_arr;
 }
 
 // TESTS (no modificar)
