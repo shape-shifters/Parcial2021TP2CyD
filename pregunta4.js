@@ -22,7 +22,9 @@
    * @param {*} inventors 
    */
   function addDiscoveries(inventor, discoveries, inventors){
-      
+    for (let i in inventors) {
+      if (inventors[i].last == inventor)inventors[i]['discoveries'] = discoveries;
+    }
   }
 
   console.log(addDiscoveries('Einstein', 
